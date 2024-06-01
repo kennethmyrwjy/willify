@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body style="background-color: #2d515e;">
+
+    <div class="middle-box-container">
+        <h1 style="margin-bottom: 20px;">Welcome to Willify.</h1>
+        <div class="middle-box">
+            <h1>Register</h1>
+            <div class="input-row">
+                <h2>Email</h2>
+            <input id="email-input" class="input-text" type="text" placeholder="ex: example@company.abc">
+            <span id="email-error" class="error"></span><br><br>
+            </div>
+            <div class="input-row">
+                <h2>Name</h2>
+            <input id="username-input" class="input-text" type="text" placeholder="ex: John Doe">
+            <span id="username-error" class="error"></span><br><br>
+            </div>
+            <div class="input-row">
+                <h2>Password</h2>
+                <span style="display: flex;">
+                    <input id="password-input" class="input-password" type="text" placeholder="Create a strong password">
+                    <span style="display: flex; align-items: center;">
+                        <img id="visibility-icon" onclick="togglePasswordVisibility()" src="./assets/icons/visibility-on.png" alt="Icon">
+                    </span>
+                </span>
+                <span id="password-error" class="error"></span><br><br>
+            </div>
+
+            <div class="gender-row">
+                <h2 style="margin-right: 20px;">Gender</h2>
+                <select id="gender-input" class="select" name="Gender" id="select-gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="trans">Transgender</option>
+                    <option value="agender">Agender</option>
+                </select>
+                <span id="gender-error" class="error"></span><br><br>
+            </div>
+
+            <div class="gender-row">
+                <h2 style="margin-right: 20px;">Age</h2>
+                <input id="age-input" type="number" class="age">
+                <span id="age-error" class="error"></span><br><br>
+            </div>
+
+            <button onclick="validateForm()" id="register-button" class="register-button">
+                Register
+            </button>
+            <div style="margin-bottom: 10px;"></div>
+
+        </div>
+    </div>
+
+    <!-- javascript here -->
+    <script src="./javascript/home.js"></script>
+</body>
+</html>

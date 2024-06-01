@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Page</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+    <div class="top-bar" style="background-color: #404040;">
+        <a class="register-text" href="register.html">Register your account now.</a>
+        <a href="register.html" class="register-button" style="padding: 6px 20px 5px 20px;">
+            Register
+        </a>
+    </div>
+    
+    <div class="top-bar">
+        <span class="song-info">
+            <a href="songdetail.html">
+                <img src="./assets/songs/niki - vintage.png" alt="Icon">
+            </a>
+            <a href="songdetail.html" class="text">
+                <h1 style="font-size: 40px;">Zephyr</h1>
+                <h3 style="font-size: 30px;">05. Vintage - NIKI</h3>
+            </a>
+        </span>
+        <span class="row">
+            <span class="song-control">
+                <span class="icon">
+                    <img src="./assets/icons/previous.png" alt="Icon">
+                </span>
+            </span>
+            <span class="song-control">
+                <span class="icon">
+                    <span>
+                        <img onclick="playOrPause()" id="play-button" src="./assets/icons/play.png" alt="Icon">
+                    </span>
+                </span>
+            </span>
+            <span class="song-control">
+                <span class="icon">
+                    <span>
+                        <img src="./assets/icons/next.png" alt="Icon">
+                    </span>
+                </span>
+            </span>
+        </span>
+    </div>
+
+    <a href="home.html" class="button">
+        <span class="icon">
+            <img src="./assets/icons/home.png" alt="Icon">
+        </span>
+        <span class="text">Home</span>
+    </a>
+
+    <a href="albums.html" class="button">
+        <span class="icon">
+            <img src="./assets/icons/library.png" alt="Icon">
+        </span>
+        <span class="text">Albums</span>
+    </a>
+
+    <a href="account.html" class="button">
+        <span class="icon">
+            <img src="./assets/icons/question.png" alt="Icon">
+        </span>
+        <span class="text">About Us</span>
+    </a>
+
+    <div style="margin: 10px 0px;">
+        <h1>What to Play?</h1>
+    </div>
+
+    <div>
+        <div href="albumdetail.html" class="album-row">
+            <h1>01.</h1>
+            <a href="albumdetail.html" class="cover">
+                <img src="./assets/songs/alonica - lany.png" alt="cover">
+            </a>
+            <div class="text-column">
+                <a class="title" href="albumdetail.html">
+                    a beautiful blur (deluxe)
+                </a>
+                <a class="artist">
+                    by LANY
+                </a>
+            </div>
+            <div class="text-column">
+                <div class="year">
+                    2023
+                </div>
+            </div>
+        </div>
+        <div href="albumdetail.html" class="album-row">
+            <h1>02.</h1>
+            <a href="albumdetail.html" class="cover">
+                <img src="./assets/songs/niki - vintage.png" alt="cover">
+            </a>
+            <div class="text-column">
+                <a class="title" href="albumdetail.html">
+                    Zephyr
+                </a>
+                <a class="artist">
+                    by NIKI
+                </a>
+            </div>
+            <div class="text-column">
+                <div class="year">
+                    2018
+                </div>
+            </div>
+        </div>
+        <div href="albumdetail.html" class="album-row">
+            <h1>03.</h1>
+            <a href="albumdetail.html" class="cover">
+                <img src="./assets/songs/about you - the 1975.jpg" alt="cover">
+            </a>
+            <div class="text-column">
+                <a class="title" href="albumdetail.html">
+                    Being Funny In a Foreign Language
+                </a>
+                <a class="artist">
+                    by The 1975
+                </a>
+            </div>
+            <div class="text-column">
+                <div class="year">
+                    2024
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 20px;"></div>
+    <span>
+        <div class="website-detail">
+            <h1>Welcome, to Willify.</h1>
+            <div style="margin: 10px;"></div>
+            <h3>
+                Willify is a music-streaming website with high-quality audios, large list of songs, and a smooth experience, 
+                but, more than that, it is a love letter to all the true music fans out there who wants the authentic experience of 
+                listening music that is no longer found in most streaming platforms. Listen to the story your favorite artists want to tell their listeners,
+                and fall in love with music all over again.
+            </h3>
+            <div style="margin: 20px;"></div>
+            <p>Copyright 2024</p>
+        </div>
+    </span>
+
+    <!-- javascript here -->
+    <script src="./javascript/home.js"></script>
+</body>
+</html>

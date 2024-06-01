@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Details</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    
+    <div class="top-bar" style="background-color: #404040;">
+        <a class="register-text" href="register.html">Register your account now.</a>
+        <a href="register.html" class="register-button" style="padding: 6px 20px 5px 20px;">
+            Register
+        </a>
+    </div>
+
+    <div class="top-bar">
+        <span class="song-info">
+            <a href="songdetail.html">
+                <img src="./assets/songs/niki - vintage.png" alt="Icon">
+            </a>
+            <a href="songdetail.html" class="text">
+                <h1 style="font-size: 40px;">Zephyr</h1>
+                <h3 style="font-size: 30px;">05. Vintage - NIKI</h3>
+            </a>
+        </span>
+        <span class="row">
+            <span class="song-control">
+                <span class="icon">
+                    <img src="./assets/icons/previous.png" alt="Icon">
+                </span>
+            </span>
+            <span class="song-control">
+                <span class="icon">
+                    <span>
+                        <img onclick="playOrPause()" id="play-button" src="./assets/icons/play.png" alt="Icon">
+                    </span>
+                </span>
+            </span>
+            <span class="song-control">
+                <span class="icon">
+                    <span>
+                        <img src="./assets/icons/next.png" alt="Icon">
+                    </span>
+                </span>
+            </span>
+        </span>
+    </div>
+
+    <a href="home.html" class="button">
+        <span class="icon">
+            <img src="./assets/icons/home.png" alt="Icon">
+        </span>
+        <span class="text">Home</span>
+    </a>
+
+    <a href="albums.html" class="button">
+        <span class="icon">
+            <img src="./assets/icons/library.png" alt="Icon">
+        </span>
+        <span class="text">Albums</span>
+    </a>
+
+    <a href="account.html" class="button">
+        <span class="icon">
+            <img src="./assets/icons/question.png" alt="Icon">
+        </span>
+        <span class="text">About Us</span>
+    </a>
+
+    <div class="album-header">
+        <div class="cover">
+            <img src="./assets/songs/alonica - lany.png" alt="cover">
+        </div>
+        <div class="text-column">
+            <a class="title">
+                a beautiful blur (deluxe)
+            </a>
+            <a class="artist">
+                by LANY
+            </a>
+        </div>
+        <div class="text-column">
+            <div class="year">
+                <img src="./assets/icons/play-circle.png" alt="Icon">
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; padding: 30px;">
+        <h3>
+            "In every high and every low, an ocean, a mirror, an airplane window, time flies and then it stands still too,
+        </h3>
+        <h3>
+            But no matter what no matter where its a beautiful blur when I am with you."
+        </h3>
+    </div>
+
+    <a href="songdetail.html" class="song-row">
+        <h2>01.</h2>
+        <div class="title">
+            <h2>XXL</h2>
+        </div>
+        <div class="views">
+            13,269,385
+        </div>
+    </a>
+    <a href="songdetail.html" class="song-row">
+        <h2>02.</h2>
+        <div class="title">
+            <h2>Out Of My League</h2>
+        </div>
+        <div class="views">
+            12,021,719
+        </div>
+    </a>
+    <a href="songdetail.html" class="song-row">
+        <h2>03.</h2>
+        <div class="title">
+            <h2>Sugar & Cinnamon</h2>
+        </div>
+        <div class="views">
+            5,234,567
+        </div>
+    </a>
+    <a href="songdetail.html" class="song-row">
+        <h2>04.</h2>
+        <div class="title">
+            <h2>I Pray</h2>
+        </div>
+        <div class="views">
+            6,123,578
+        </div>
+    </a>
+    <a href="songdetail.html" class="song-row">
+        <h2>05.</h2>
+        <div class="title">
+            <h2>Home Is Where The Hurt Is</h2>
+        </div>
+        <div class="views">
+            6,245,679
+        </div>
+    </a>
+    <a href="songdetail.html" class="song-row">
+        <h2>06.</h2>
+        <div class="title">
+            <h2>It Even Rains In LA</h2>
+        </div>
+        <div class="views">
+            4,235,679
+        </div>
+    </a>
+    <a href="songdetail.html" class="song-row">
+        <h2>07.</h2>
+        <div class="title">
+            <h2>Heartbreak Can Wait</h2>
+        </div>
+        <div class="views">
+            4,274,692
+        </div>
+    </a>
+    <a href="songdetail.html" class="song-row">
+        <h2>08.</h2>
+        <div class="title">
+            <h2>(Saturday Night) 3:22 A.M.</h2>
+        </div>
+        <div class="views">
+            3,234,568
+        </div>
+    </a>
+    <a href="songdetail.html" class="song-row">
+        <h2>09.</h2>
+        <div class="title">
+            <h2>Love At First Fight</h2>
+        </div>
+        <div class="views">
+            13,458,789
+        </div>
+    </a>
+    <a href="songdetail.html" class="song-row">
+        <h2>10.</h2>
+        <div class="title">
+            <h2>Congrats</h2>
+        </div>
+        <div class="views">
+            16,359,267
+        </div>
+    </a>
+    <a href="songdetail.html" class="song-row">
+        <h2>11.</h2>
+        <div class="title">
+            <h2>'Cause You Have To</h2>
+        </div>
+        <div class="views">
+            29,458,290
+        </div>
+    </a>
+    <a href="songdetail.html" class="song-row">
+        <h2>12.</h2>
+        <div class="title">
+            <h2>Alonica</h2>
+        </div>
+        <div class="views">
+            24,457,834
+        </div>
+    </a>
+    <a href="songdetail.html" class="song-row">
+        <h2>13.</h2>
+        <div class="title">
+            <h2>No</h2>
+        </div>
+        <div class="views">
+            3,574,784
+        </div>
+    </a>
+    <a href="songdetail.html" class="song-row">
+        <h2>14.</h2>
+        <div class="title">
+            <h2>XXL - Stripped</h2>
+        </div>
+        <div class="views">
+            2,458,290
+        </div>
+    </a>
+    <a href="songdetail.html" class="song-row">
+        <h2>15.</h2>
+        <div class="title">
+            <h2>Love At First Fight - Stripped</h2>
+        </div>
+        <div class="views">
+            2,958,293
+        </div>
+    </a>
+
+    <div style="margin-top: 20px;"></div>
+    <span>
+        <div class="website-detail">
+            <h1>Welcome, to Willify.</h1>
+            <div style="margin: 10px;"></div>
+            <h3>
+                Willify is a music-streaming website with high-quality audios, large list of songs, and a smooth experience, 
+                but, more than that, it is a love letter to all the true music fans out there who wants the authentic experience of 
+                listening music that is no longer found in most streaming platforms. Listen to the story your favorite artists want to tell their listeners,
+                and fall in love with music all over again.
+            </h3>
+            <div style="margin: 20px;"></div>
+            <p>Copyright 2024</p>
+        </div>
+    </span>
+
+    <!-- javascript here -->
+    <script src="./javascript/home.js"></script>
+</body>
+</html>
